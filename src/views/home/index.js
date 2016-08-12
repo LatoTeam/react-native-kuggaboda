@@ -18,13 +18,11 @@ class Home extends Component {
   }
 
   render() {
-    console.log(this.props)
-
     return (
       <Container>
-          <Content>
-            <Text style={styles.content}>{this.props.title}</Text>
-          </Content>
+        <Content>
+          <Text style={styles.content}>{this.props.title}</Text>
+        </Content>
       </Container>
     );
   }
@@ -36,6 +34,7 @@ Home.propTypes = {
 }
 
 const mapStateToProps = (state, ownProps) => {
+  console.log(state);
   return {
     title: state.testReducer.title
   };

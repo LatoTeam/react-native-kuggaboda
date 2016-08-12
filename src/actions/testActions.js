@@ -1,8 +1,8 @@
-export const SET_TITLE = "SET_TITLE";
+import * as types from "./actionTypes";
 
 export function setTitle(title) {
   return {
-    type: SET_TITLE,
-    title: title
+    type: types.SET_TITLE,
+    title
   };
 }

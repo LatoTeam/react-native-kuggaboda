@@ -1,6 +1,10 @@
-import * as types from "../actions/testActions";
+import * as types from "../actions/actionTypes";
 
-function testReducer(state = {}, action) {
+const initialTestState = {
+  title: ''
+};
+
+export default function(state = initialTestState, action) {
   switch (action.type) {
     case types.SET_TITLE:
       return Object.assign({}, state, {
@@ -10,5 +14,3 @@ function testReducer(state = {}, action) {
       return state;
   }
 }
-
-export default testReducer;
