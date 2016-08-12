@@ -1,3 +1,2 @@
-# react-native-base
-
-A simple boilerplate for react native applications
+# react-native-kuggaboda
+A lightweight React Native boilerplate.
